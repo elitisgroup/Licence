@@ -132,3 +132,5 @@ Prawn::Document.generate("Open Elitis Group Licence.pdf") do
     }
   end
 end
+
+puts "\nDone!"
