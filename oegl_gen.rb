@@ -127,8 +127,8 @@ Prawn::Document.generate("Open Elitis Group Licence.pdf") do
     # Page Number
     bounding_box([bounds.right - 25, bounds.bottom+25], :width => bounds.left + 50) {
       puts "Set page number"
-      text "Page", :size => 12, :color => Colors::UNIMPORTANT
-      text "#{i+1}", :size => 12, :color => Colors::GENERAL
+      text "Page", :size => Sizes::GENERAL, :color => Colors::UNIMPORTANT
+      text "#{i+1}", :size => Sizes::GENERAL, :color => Colors::GENERAL
     }
   end
 end
