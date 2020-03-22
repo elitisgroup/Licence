@@ -17,7 +17,7 @@ Prawn::Document.generate("Open Elitis Group Licence.pdf") do
   # Title
   puts "Set title"
   text "Open Elitis Group Licence", :size => Sizes::TITLE, :color => Colors::GENERAL
-  text "Version G2020.3 (#{Time.now.utc})", :size => Sizes::HEADING, :color => Colors::UNIMPORTANT
+  text "Version G2020.31 (#{Time.now.utc})", :size => Sizes::HEADING, :color => Colors::UNIMPORTANT
 
   # Description
   puts "Set description"
@@ -121,7 +121,7 @@ Prawn::Document.generate("Open Elitis Group Licence.pdf") do
     # Copyright Notice
     bounding_box([bounds.left, bounds.bottom+25], :width => bounds.right - 50) {
       puts "Set copyright notice"
-      text "© 2020 Elitis\nRedistribution of this document is not permitted; redistribute the generator.", :size => Sizes::GENERAL, :color => Colors::UNIMPORTANT
+      text "© 2020 Elitis\nRedistribution of this document is permitted as long as the generator is included.", :size => Sizes::GENERAL, :color => Colors::UNIMPORTANT
     }
 
     # Page Number
